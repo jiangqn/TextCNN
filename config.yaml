@@ -1,0 +1,12 @@
+base_path: data
+glove_source_path: /home/data_ti4_c/jiangqn/datasets/embeddings/glove.840B.300d.txt
+embed_size: 300
+kernel_sizes: [3, 4, 5]
+kernel_num: 100
+dropout: 0.5
+num_categories: 2
+batch_size: 64
+lr: 0.001
+weight_decay: 0
+epoches: 5
+eval_freq: 100
