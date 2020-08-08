@@ -39,7 +39,7 @@ def train_text_cnn(config):
         format='tsv', skip_header=True, fields=fields)
 
     logger.info('build vocabulary')
-    TEXT.build_vocab(train_data, specials=[UNK, PAD, SOS, EOS])
+    TEXT.build_vocab(train_data, specials=[UNK, PAD, SOS, EOS], max_size=10000)
     vocab = TEXT.vocab
     vocab_size = len(vocab.itos)
     logger.info('vocab_size: %d' % vocab_size)
